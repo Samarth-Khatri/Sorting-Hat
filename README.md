@@ -5,25 +5,25 @@ To do this, Godric Gryffindor used his magical hat – henceforward known as the
 
 The four houses have different entry requirements, and nobody summed them up better than the old Sorting Hat itself in its welcoming song...
 
-# Gryffindor <img src="https://github.com/Samarth-Khatri/Sorting-Hat/blob/main/images/G.png" width="30px">
+# Gryffindor <img src="https://github.com/Samarth-Khatri/Sorting-Hat/blob/main/images/G.png" width="25px">
 ‘You might belong in Gryffindor,
 Where dwell the brave at heart,
 Their daring, nerve and chivalry
 Set Gryffindors apart.’
 
-# Hufflepuff <img src="https://github.com/Samarth-Khatri/Sorting-Hat/blob/main/images/H.png" width="30px">
+# Hufflepuff <img src="https://github.com/Samarth-Khatri/Sorting-Hat/blob/main/images/H.png" width="25px">
 ‘You might belong in Hufflepuff
 Where they are just and loyal
 Those patient Hufflepuffs are true
 And unafraid of toil.’
 
-# Ravenclaw <img src="https://github.com/Samarth-Khatri/Sorting-Hat/blob/main/images/R.png" width="30px">
+# Ravenclaw <img src="https://github.com/Samarth-Khatri/Sorting-Hat/blob/main/images/R.png" width="25px">
 ‘Or yet in wise old Ravenclaw
 If you’ve a ready mind
 Where those of wit and learning
 Will always find their kind.’
 
-# Slytherin <img src="https://github.com/Samarth-Khatri/Sorting-Hat/blob/main/images/S.png" width="30px">
+# Slytherin <img src="https://github.com/Samarth-Khatri/Sorting-Hat/blob/main/images/S.png" width="25px">
 ‘Or perhaps in Slytherin
 You’ll make your real friends
 Those cunning folk use any means
