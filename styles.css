@@ -1,0 +1,456 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: url("images/cursor_.png"), auto;
+}
+
+.page1 {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/hall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.title span {
+    color: white;
+    font-size: 10em;
+    font-family: 'Irish Grover', cursive;
+    letter-spacing: 0.1em;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    position: relative;
+    transform: translateY(-100vh);
+    display: inline-block;
+    animation: fall 1s forwards;
+}
+
+/* falling letters animation */
+
+@keyframes fall {
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+.title span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.title span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.title span:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.title span:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+.title span:nth-child(6) {
+    animation-delay: 1.5s;
+}
+
+.title span:nth-child(7) {
+    animation-delay: 1.8s;
+}
+
+.title span:nth-child(8) {
+    animation-delay: 2.1s;
+}
+
+.title span:nth-child(9) {
+    animation-delay: 2.4s;
+}
+
+.title span:nth-child(10) {
+    animation-delay: 2.7s;
+}
+
+.title span:nth-child(11) {
+    animation-delay: 3s;
+}
+
+.sub-title {
+    color: white;
+    font-size: 2.5em;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 83%;
+    transform: translate(-50%, -50%);
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+    animation: FadeIn 3s forwards;
+    animation-delay: 4s;
+    opacity: 0;
+}
+
+.sub-title a {
+    text-decoration: none;
+    color: inherit;
+    cursor: url("images/cursor_.png"), auto;
+}
+
+/* fading-in text animation */
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Sub-title's underline effect */
+
+.sub-title::after {
+    content: '';
+    width: 100%;
+    height: 0.175rem;
+    position: absolute;
+    background-color: white;
+    left: -1%;
+    bottom: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+    border-color: #000 1px;
+}
+
+.sub-title:hover::after {
+    transform: scale(1, 1);
+}
+
+/* Responsiveness for page 1*/
+
+@media screen and (max-width: 950px) {
+    .title span {
+        font-size: 8em;
+    }
+    .sub-title {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 750px) {
+    .title span {
+        font-size: 6em;
+    }
+    .sub-title {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 550px) {
+    .title span {
+        font-size: 4em;
+    }
+    .sub-title {
+        font-size: 1.7em;
+        width: 100%;
+    }
+    .sub-title::after {
+        font-size: 1.5em;
+        width: 55%;
+        left:22.5%;
+    }
+}
+@media screen and (max-width: 390px) {
+    .title span {
+        font-size: 3em;
+    }
+    .sub-title {
+        font-size: 1.5em;
+        width: 100%;
+    }
+    .sub-title::after {
+        font-size: 1.5em;
+        width: 60%;
+        left:20%;
+    }
+}
+    .page2 {
+        background-image: url("images/sorting hat.gif");
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .splashscreen {
+        top:0;
+        left:0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #9B7741;
+        transition: 0.5s ease-in-out;
+        z-index:100;
+    }
+    .splashscreen img {
+        height: 17%;
+    }
+    .splashscreen.invisible {
+        z-index: -10;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+    .buttonBox {
+        margin: 0;
+        max-width: 200px;
+        min-width: 150px;
+        flex: 20%;
+    }
+    button {
+        font-family: 'Irish Grover', cursive;
+        font-size: 2.5em;
+        font-weight: 700;
+        word-spacing: 0.25em;
+        letter-spacing: 0.15em;
+        height: 80px;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(16px);
+        border: none;
+        border-radius: 3%;
+        outline: none;
+        position: absolute;
+        width: 30%;
+        left: 35%;
+        bottom: 9%;
+        cursor: url("images/cursor_.png"), auto;
+    }
+    #eighth>button {
+        transition: all .5s ease-in-out;
+    }
+    #eighth:hover button {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 50px rgba(255, 255, 255, .8), 0 0 75px rgba(255, 255, 255, .6), 0 0 76px rgba(255, 255, 255, .4), 0 0 77px rgba(255, 255, 255, .5), 0 0 78px rgba(255, 255, 255, .4), 0 0 79px rgba(255, 255, 255, .3), 0 0 80px rgba(255, 255, 255, .2), 0 0 85px rgba(255, 255, 255, .1);
+    }
+    .container {
+        height: 90%;
+        width: 45%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        text-align: center;
+        background: url('images/page.png');
+        background-position: center center;
+        background-size: cover;
+        font-family: 'Life savers', cursive;
+        z-index: 10;
+    }
+    .containeractive {
+        height: 90%;
+        width: 45%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        background: url('images/page.png');
+        background-position: center center;
+        background-size: cover;
+        font-family: 'Life savers', cursive;
+        z-index: 10;
+        transform: translate(-50%, -50%) scale(1);
+        transition: 1s ease-in-out;
+    }
+    .text {
+        margin: 20% 0;
+    }
+    .text h1 {
+        font-size: 3em;
+    }
+    .text h2 {
+        font-size: 1.7em;
+        transition: .5s ease-in-out;
+    }
+    .text h2 a {
+        text-decoration: none;
+        color: black;
+        cursor: inherit;
+    }
+    .text h2:hover {
+        font-size: 2.1em;
+        transition: .5s ease-in-out;
+    }
+    .housename {
+        margin-bottom: 25%;
+    }
+    .overlay {
+        position: fixed;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: none;
+    }
+    .overlayactive {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: none;
+        opacity: 1;
+        pointer-events: all;
+    }
+    /* Responsiveness of page 2 */
+
+    @media screen and (max-width: 1250px) {
+        button {
+            font-size: 2em;
+        }
+        .containeractive {
+            height: 80%;
+            width: 48%;
+        }
+        .text {
+            margin: 14% 0;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+
+        .containeractive {
+            height: 84%;
+            width: 62%;
+        }
+        .text {
+            margin: 16% 0;
+        }
+        .text h1{
+            font-size: 2.8em;
+        }
+        .text h2{
+            font-size: 1.5em;
+        }
+        .housename {
+            margin-bottom: 28%;
+        }
+
+    }
+    @media screen and (max-width: 750px) {
+        button {
+            font-size: 1.6em;
+        }
+        .containeractive {
+            height: 86%;
+            width: 83%;
+        }
+        .text {
+            margin: 20% 0;
+        }
+        .text h1{
+            font-size: 2.5em;
+        }
+        .text h2{
+            font-size: 1.4em;
+        }
+        .housename {
+            margin-bottom: 28%;
+        }
+
+    }
+    @media screen and (max-width: 550px) {
+        button {
+            width: 45%;
+            left:26%;
+        }
+        .containeractive {
+            height: 69%;
+            width: 95%;
+        }
+        .text {
+            margin: 17% 0;
+        }
+        .text h1{
+            font-size: 2.5em;
+        }
+        .text h2{
+            font-size: 1.4em;
+        }
+        .housename {
+            margin-bottom: 26%;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .containeractive {
+            height: 54%;
+            width: 100%;
+        }
+        .text {
+            margin: 10% 0;
+        }
+        .text h1{
+            font-size: 2.3em;
+        }
+        .text h2{
+            font-size: 1.4em;
+        }
+        .housename {
+            margin-bottom: 25%;
+        }
+    }
+    @media screen and (max-width: 350px) {
+        button {
+            width: 60%;
+            left:20%;
+        }
+        .text {
+            margin: 13% 0;
+        }
+        .text h1{
+            font-size: 2.1em;
+        }
+        .text h2{
+            font-size: 1.4em;
+        }
+        .housename {
+            margin-bottom: 23%;
+        }
+    }
+    @media screen and (max-width: 300px) {
+        button {
+            width: 70%;
+            left:15%;
+        }
+        .containeractive {
+            height: 43%;
+            width: 100%;
+        }
+        .text {
+            margin: 13% 0;
+        }
+        .text h1{
+            font-size: 1.8em;
+        }
+        .text h2{
+            font-size: 1.3em;
+        }
+        .housename {
+            margin-bottom: 20%;
+        }
+    }
